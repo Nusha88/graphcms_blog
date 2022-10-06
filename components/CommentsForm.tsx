@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { submitComment } from '../services';
 
 const CommentsForm = ({ slug }) => {
-    const [error, setError] = useState(false);
-    const [localStorage, setLocalStorage] = useState(null);
-    const [showSuccessMessage, setShowSuccessMessage] = useState(false);
-    const [formData, setFormData] = useState({ name: null, email: null, comment: null, storeData: false });
+    const [error, setError] = useState<any>(false);
+    const [localStorage, setLocalStorage] = useState<any>(null);
+    const [showSuccessMessage, setShowSuccessMessage] = useState<any>(false);
+    const [formData, setFormData] = useState<any>({ name: null, email: null, comment: null, storeData: false });
 
     useEffect(() => {
         setLocalStorage(window.localStorage);
